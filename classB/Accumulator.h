@@ -4,7 +4,7 @@
 #include <cmath>
 #include <vector>
 
-//MODULE_IF
+MODULE_IF
 namespace UTILS
 	{
 	namespace MathFuncs

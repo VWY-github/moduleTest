@@ -3,7 +3,7 @@
 
 #include "Accumulator.h"
 
-//MODULE_IF
+MODULE_IF
 namespace UTILS
     {
 	class	MovingAvg
