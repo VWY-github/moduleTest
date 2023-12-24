@@ -4,7 +4,8 @@
 #include <cmath>
 #include <vector>
 
-MODULE_IF namespace UTILS
+//MODULE_IF
+namespace UTILS
 	{
 	namespace MathFuncs
 		{

@@ -2,6 +2,7 @@
 
 #ifdef USE_MODULES
 #include <string>
+#include <iostream>
 import utilModule;
 #else
 #include "Foo.h"

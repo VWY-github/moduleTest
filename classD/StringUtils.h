@@ -12,7 +12,8 @@
 #include <typeinfo>
 #include <algorithm>
 
-MODULE_IF namespace UTILS
+//MODULE_IF
+namespace UTILS
     {
     namespace STRING
         {

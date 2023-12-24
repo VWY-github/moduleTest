@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-MODULE_IF namespace UTILS
+//MODULE_IF
+namespace UTILS
 	{
 	MODULE_IF class Foo
 		{

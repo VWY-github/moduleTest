@@ -16,19 +16,19 @@ module;
 #include <typeinfo>
 #include <vector>
 
+export module utilModule;
 
 // include the project headers/classes
 #include "Foo.h"
-//#include "Accumulator.h"
-//#include "MovingAverage.h"
-//#include "StringUtils.h"
-
-export module utilModule;
+#include "Accumulator.h"
+#include "MovingAverage.h"
+#include "StringUtils.h"
 
 
-//import "Foo.h";
+// Various failed attempts at fixing errors
+export namespace UTILS {};
+export namespace UTILS::MathFuncs {};
+//export class UTILS::MathFuncs::Accumulator;
+//export UTILS::MathFuncs::Accumulator;
+//export MathFuncs::Accumulator;
 
-//export UTILS::Foo;
-
-//export namespace UTILS {};
-//export class UTIL::Foo;
