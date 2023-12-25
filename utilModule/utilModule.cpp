@@ -21,6 +21,6 @@ export module utilModule;
 #include "Foo.h"
 #include "Accumulator.h"
 #include "MovingAverage.h"
-#include "StringUtils.h"
+//#include "StringUtils.h"	 this compiled into module ok, but causes ICE when attempted used
 
 

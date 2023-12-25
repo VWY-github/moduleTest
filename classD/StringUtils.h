@@ -17,6 +17,7 @@ namespace UTILS
     {
     namespace STRING
         {
+		/*
 		inline std::string	upperCase(std::string s)
 			{
 			std::transform(s.begin(),s.end(),s.begin(),
@@ -36,7 +37,7 @@ namespace UTILS
 					});
 			return s;
 			}
-
+*/
 		inline std::string toString(const float& val)
 			{
             std::ostringstream os;

@@ -8,7 +8,7 @@ import utilModule;
 #include "Foo.h"
 #include "Accumulator.h"
 #include "MovingAverage.h"
-#include "StringUtils.h"
+//#include "StringUtils.h"
 #endif
 
 void test_1()
@@ -35,9 +35,15 @@ void test_2()
 
 void test_3()
 	{
+	/*
 	const std::string lowerS("hello world");
 	const std::string upperS=UTILS::STRING::upperCase(lowerS);
 	std::cout<<"lower=["<<lowerS<<"]  upper=["<<upperS<<"]"<<std::endl;
+	
+	float f(3.14);
+	const std::string s = UTILS::STRING::toString(f);
+	std::cout<<"f is "<<f<<" and s is "<<s<<std::endl;
+	*/
 	}
 
 int main()
