@@ -17,8 +17,8 @@ namespace UTILS
     {
     namespace STRING
         {
-		/*
-		inline std::string	upperCase(std::string s)
+		//inline
+		std::string	upperCase(std::string s)
 			{
 			std::transform(s.begin(),s.end(),s.begin(),
 				[](unsigned char c)
@@ -28,7 +28,8 @@ namespace UTILS
 			return s;
 			}
 
-		inline std::string	lowerCase(std::string s)
+		//inline
+		std::string	lowerCase(std::string s)
 			{
 			std::transform(s.begin(),s.end(),s.begin(),
 				[](unsigned char c)
@@ -37,14 +38,16 @@ namespace UTILS
 					});
 			return s;
 			}
-*/
-		inline std::string toString(const float& val)
+
+		//inline
+		std::string toString(const float& val)
 			{
             std::ostringstream os;
             return ( ( os <<std::setprecision(std::numeric_limits<float>::max_digits10) << val ) ? os.str(): "" );
 			}
 
-		inline void fromString(const std::string& str, float& val)
+		//inline
+		void fromString(const std::string& str, float& val)
 			{
 			try
 				{
@@ -57,7 +60,8 @@ namespace UTILS
 				}
 			}
 
-        static inline void removeChars(std::string& str,const std::string& charsToRemove)
+        //static inline
+		void removeChars(std::string& str,const std::string& charsToRemove)
             {
             std::string::size_type pos(0);
             while ( true )
@@ -71,7 +75,8 @@ namespace UTILS
                 }
             }
 
-        static inline std::string toHexString(const uint32_t _value,const size_t _minLen)
+        //static inline
+		std::string toHexString(const uint32_t _value,const size_t _minLen)
             {
             std::stringstream os;
             os << std::setfill('0')<< std::setw(int(_minLen))<< std::hex << _value;
@@ -79,13 +84,14 @@ namespace UTILS
             }
 
 		template<typename T>
-        inline bool fromHexString(const std::string& str, T& val)
+        bool fromHexString(const std::string& str, T& val)
             {
 			std::istringstream is(str);
 			return ( (is >> std::hex >> val)?true:false);
             }
 
-		static inline bool stripQuotes(std::string& s,const std::string& stripList="\"")
+		//static inline
+		bool stripQuotes(std::string& s,const std::string& stripList="\"")
 			{
 			const size_t lQuote=s.find_first_of(stripList);
 			if ( std::string::npos != lQuote )
@@ -104,12 +110,14 @@ namespace UTILS
 			return false;
 			}
 
-		static void splitLines(const std::string_view data, std::vector<std::string>& lines)
+		//static
+		void splitLines(const std::string_view data, std::vector<std::string>& lines)
 			{
 			lines.clear();
 			if ( ! data.empty() )
 				{
-				static constexpr auto delimiter{'\n'};
+				//static constexpr
+				auto delimiter{'\n'};
 				for (const auto oneLine: std::views::split(data, delimiter))
 					{
 					const auto s( std::string_view(oneLine.begin(),oneLine.end()) );

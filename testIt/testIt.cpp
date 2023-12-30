@@ -35,7 +35,6 @@ void test_2()
 
 void test_3()
 	{
-	/*
 	const std::string lowerS("hello world");
 	const std::string upperS=UTILS::STRING::upperCase(lowerS);
 	std::cout<<"lower=["<<lowerS<<"]  upper=["<<upperS<<"]"<<std::endl;
@@ -43,7 +42,6 @@ void test_3()
 	float f(3.14);
 	const std::string s = UTILS::STRING::toString(f);
 	std::cout<<"f is "<<f<<" and s is "<<s<<std::endl;
-	*/
 	}
 
 int main()
